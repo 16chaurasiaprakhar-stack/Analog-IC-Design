@@ -6,14 +6,14 @@ A complete transistor-level CMOS inverter design and simulation using open-sourc
 
 
 
-## 🔧 Tools Used
+###  Tools Used
 | Tool | Purpose |
 |------|---------|
 | **Xschem** | Schematic capture and netlisting |
 | **ngspice** | Circuit simulation |
 | **GNUplot** | Result visualization |
 
-## 📊 Circuit Specifications
+###  Circuit Specifications
 | Parameter | Value |
 |-----------|-------|
 | Technology | CMOS |
@@ -22,9 +22,9 @@ A complete transistor-level CMOS inverter design and simulation using open-sourc
 | NMOS | IRF540 (W=100u, L=1u) |
 | Analysis | DC Sweep (0V to 1.8V) |
 
-## 📈 Results
+###  Results
 
-### Voltage Transfer Characteristic (VTC)
+#### Voltage Transfer Characteristic (VTC)
 
 | Input (Vin) | Output (Vout) | Logic State |
 |-------------|---------------|-------------|
@@ -32,7 +32,7 @@ A complete transistor-level CMOS inverter design and simulation using open-sourc
 | 1.8V | 0V | LOW (0) |
 | ~0.9V | ~0.9V | Switching Threshold |
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 - Xschem >= 3.x
@@ -48,16 +48,17 @@ A complete transistor-level CMOS inverter design and simulation using open-sourc
    run
    plot vout vs vin
 
-# Plot results
+```#### Plot results
 plot vout              # Output voltage
 plot vin vout          # Input and output together
 plot vout vs vin       # Transfer characteristic
-
-# Check data points
+```
+```#### Check data points
 print vin vout
-
-# Save data (optional)
+```
+```#### Save data (optional)
 write results.txt vout vin
-
-# Exit
+```
+```#### Exit
 quit
+```
