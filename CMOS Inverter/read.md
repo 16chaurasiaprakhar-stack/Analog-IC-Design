@@ -67,3 +67,22 @@ write results.txt vout vin
 ```
 quit
 ```
+
+* ============================================
+* Error Recovery
+* ============================================
+
+* If simulation fails
+reset                    * Reset everything
+run                      * Re-run simulation
+
+* If plot doesn't show
+display                  * Check available vectors
+plot vout                * Try plotting again
+
+* If you need to re-load
+source inverter.spice    * Re-load netlist
+run                      * Run again
+
+* Force exit if stuck
+quit
