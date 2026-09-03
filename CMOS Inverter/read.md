@@ -44,10 +44,11 @@ A complete transistor-level CMOS inverter design and simulation using open-sourc
 3. Generate netlist (Press **`N`**)
 4. Run simulation (Press **`F9`**)
 5. In ngspice console:
-   ```spice
+
+```spice
    run
    plot vout vs vin
-
+```
 #### Plot results
 ```
 plot vout              # Output voltage
