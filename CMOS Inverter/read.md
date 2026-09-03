@@ -48,17 +48,21 @@ A complete transistor-level CMOS inverter design and simulation using open-sourc
    run
    plot vout vs vin
 
-```#### Plot results
+#### Plot results
+```
 plot vout              # Output voltage
 plot vin vout          # Input and output together
 plot vout vs vin       # Transfer characteristic
 ```
-```#### Check data points
+#### Check data points
+```
 print vin vout
 ```
-```#### Save data (optional)
+#### Save data (optional)
+```
 write results.txt vout vin
 ```
-```#### Exit
+#### Exit
+```
 quit
 ```
