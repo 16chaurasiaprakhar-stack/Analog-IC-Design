@@ -4,4 +4,46 @@
 ## Overview
 A complete transistor-level CMOS inverter design and simulation using open-source VLSI tools. This project demonstrates the fundamental building block of digital VLSI design from schematic capture to simulation verification.
 
-## 📁 Project Structure
+
+
+## 🔧 Tools Used
+| Tool | Purpose |
+|------|---------|
+| **Xschem** | Schematic capture and netlisting |
+| **ngspice** | Circuit simulation |
+| **GNUplot** | Result visualization |
+
+## 📊 Circuit Specifications
+| Parameter | Value |
+|-----------|-------|
+| Technology | CMOS |
+| Supply Voltage | 1.8V |
+| PMOS | IRF5305 (W=100u, L=1u) |
+| NMOS | IRF540 (W=100u, L=1u) |
+| Analysis | DC Sweep (0V to 1.8V) |
+
+## 📈 Results
+
+### Voltage Transfer Characteristic (VTC)
+
+| Input (Vin) | Output (Vout) | Logic State |
+|-------------|---------------|-------------|
+| 0V | 1.8V | HIGH (1) |
+| 1.8V | 0V | LOW (0) |
+| ~0.9V | ~0.9V | Switching Threshold |
+
+## 🚀 How to Run
+
+### Prerequisites
+- Xschem >= 3.x
+- ngspice >= 46
+
+### Steps
+1. Open Xschem
+2. Load `schematic/inverter.sch`
+3. Generate netlist (Press **`N`**)
+4. Run simulation (Press **`F9`**)
+5. In ngspice console:
+   ```spice
+   run
+   plot vout vs vin
