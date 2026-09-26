@@ -5,6 +5,6 @@ A VLSI design portfolio featuring CMOS and ASIC circuit design using Cadence Vir
 <img width="700" height="350" alt="Simulation_2" src="https://github.com/user-attachments/assets/fc228b39-ef7f-4b5e-ad7e-ffc0f8a1ce05" />
   
      
-   
+    
    
  
