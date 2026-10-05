@@ -1,0 +1,25 @@
+** sch_path: /home/lab-user/untitled-2.sch
+**.subckt untitled-2
+M1 Q QB GND GND nmos_model w=0.36u l=0.18u
+M2 QB Q GND GND nmos_model w=0.36u l=0.18u
+M3 Q WL BL GND nmos_model w=0.36u l=0.18u
+M4 QB WL BLB GND nmos_model w=0.36u l=0.18u
+M5 Q QB VDD VDD pmos_model w=0.18u l=0.18u
+M6 QB Q VDD VDD pmos_model w=0.18u l=0.18u
+V1 WL GND PULSE(0 1.8 5n 0.1n 0.1n 10n 20n)
+V2 BL GND PULSE(1.8 1.8 0 0.1n 0.1n 5n 20n)
+V3 BLB GND PULSE(1.8 1.8 0 0.1n 0.1n 5n 20n)
+V4 VDD GND 1.8
+**** begin user architecture code
+
+.include models.sp
+
+
+.tran 10p 40n uic
+.ic V(q)=1.8 V(qb)=0
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end
