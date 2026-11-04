@@ -2,10 +2,10 @@ ERC report (2026-09-07T20:33:27+0530, Encoding UTF8)
 
 ***** Sheet /
 [power_pin_not_driven]: Input Power pin not driven by any Output Power pins
-    ; error
+    ; warning
     @(200.66 mm, 125.73 mm): Symbol U1 Pin 6 [V+, Power input, Line]
 [wire_dangling]: Wires not connected to anything
-    ; error
+    ; warning
     @(232.41 mm, 107.95 mm): Horizontal Wire, length 10.16 mm
 [global_label_dangling]: Global label not connected anywhere else in the schematic
     ; warning
@@ -14,4 +14,4 @@ ERC report (2026-09-07T20:33:27+0530, Encoding UTF8)
     ; warning
     @(215.90 mm, 133.35 mm): Global Label 'ISENSE_PV'
 
- ** ERC messages: 4  Errors 2  Warnings 2
+ ** ERC messages: 4  Errors 0  Warnings 2
